@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.3/lottie_svg.min.js"></script>
+    <title>Cbolla</title>
+    <link rel="icon" href="icons/tab-icon.png"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="font-family: 'Comic Neue';" class="relative">
+
+    <!-- MUSIC PLAYER -->
+    <div class="fixed left-6 bottom-6 z-10">
+        <div class="music-container">
+            <div class="toggle-player ">
+                
+            </div>
+            
+           
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- BACKGROUND -->
+    <div class="background">
+        <div class="one">
+           
+            <div class="container">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="text">
+                                <strong style="font-size: .89rem;">Mi Cebollita,</strong>
+                                <p style="text-indent: 15px;">
+                                Para mi Sheila por su primer dia de practicante 😱 y por el esfuerzo que siempre pone mi cebollita que amo tanto 
+                                MUAAA 😘❤️ MUAA 😘❤️ y MUAAA😘❤️❤️❤️❤️
+                                </p>
+                                <p class="love">Con mucho amor de tu Angelito ❤️</p>
+                                <div class="pana">
+                                    <img src="Foto/michi.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <audio>
+    <source src="./music/only.mp3" type="music/mpeg"> 
+   </audio>
+    
+    
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+            envelope.classList.toggle('open');
+        });
+    </script>
+    
+    <script src="app.js"></script> 
+</body>
+</html>
+
